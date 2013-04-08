@@ -1,0 +1,35 @@
+html {
+                background: #fff;
+            }
+
+            .test-element {
+                background: orange;
+                height: 200px;
+            }
+
+            .test-element:hover {
+                background: blue;
+            }
+
+            
+            .test-element:media(max-available-width: 400px) {
+                background: purple;
+            }
+
+            .test-whatever,
+            body:media(max-available-width: 400px) .test-element:media(max-available-width: 300px) {
+                background: green;
+            }
+
+            .half-width {
+                width: 50%;
+            }
+
+            /*html .test-element:media(max-available-width: 400px) {
+                background: yellow;
+            }*/
+            @media all and (-webkit-min-device-pixel-ratio: 5) {
+              .test-element {
+                background: red;
+              }
+            }
