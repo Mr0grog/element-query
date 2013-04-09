@@ -49,3 +49,8 @@ and @necolas's tweet:
 https://twitter.com/necolas/status/299573744307941376
 
 There will still be some refinement to come.
+
+
+## License
+
+This code copyright 2013 Rob Brackett and is licensed under an MIT-style license, the full text of which can be found in the `LICENSE` file.
