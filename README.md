@@ -1,6 +1,6 @@
 # Element Query
 
-Element query is little JS library designed to enable CSS "element queries," or queries nested inside CSS selectors. While traditional media queries always relate to the viewport or window, element queries relate to the state of particular elements on the page. This allows for *modular* media queries.
+Element query is a little JS library designed to enable CSS "element queries," or queries nested inside CSS selectors. While traditional media queries always relate to the viewport or window, element queries relate to the state of particular elements on the page. This allows for *modular* media queries.
 
 Just include the `element-query.js` script on your page and you can start using some basic element queries right away.
 
