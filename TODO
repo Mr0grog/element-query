@@ -1,0 +1,8 @@
+- Not/or/only for media queries
+- Support alternative syntax (use the .query-property-value class name) so we don't need to (re)load via XHR
+- Unit tests
+- Packaging support
+- Other query types
+- Plugin hooks for queries
+- Explanation of how/why it differs from MediaClass (especially w/r/t "available" space)
+- Support html:media() by synthesizing actual @media(){} rules

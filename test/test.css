@@ -1,36 +1,62 @@
+
+@import url("test2.css");
+
 html {
-                background: #fff;
-            }
+    background: #fff;
+}
 
-            .test-element {
-                background: orange;
-                height: 200px;
-            }
+.test-element {
+    background: orange;
+    height: 200px;
+}
 
-            .test-element:hover {
-                background: blue;
-            }
+.test-element:hover {
+    background: blue;
+}
 
-            
-            .test-element:media(max-available-width: 30em) {
-                background: purple;
-            }
+.test-element:media(max-available-width: 30em) {
+    background: purple;
+}
 
-            .test-whatever,
-            body:media(max-available-width: 400px) .test-element:media(max-available-width: 300px) {
-                background: green;
-            }
+.test-whatever,
+body:media(max-available-width: 400px) .test-element:media(max-available-width: 300px) {
+    background: green;
+}
 
-            .half-width {
-                font-size: 0.8em;
-                width: 50%;
-            }
+.half-width {
+    font-size: 0.8em;
+    width: 50%;
+}
 
-            /*html .test-element:media(max-available-width: 400px) {
-                background: yellow;
-            }*/
-            @media all and (-webkit-min-device-pixel-ratio: 5) {
-              .test-element {
-                background: red;
-              }
-            }
+/*html .test-element:media(max-available-width: 400px) {
+    background: yellow;
+}*/
+@media all and (-webkit-min-device-pixel-ratio: 5) {
+    .test-element {
+        background: red;
+    }
+    .test-element:media(max-available-width: 30em) {
+        background: yellow;
+    }
+
+    /* UHOH, nested queries! */
+    @media all and (-webkit-min-device-pixel-ratio: 6) {
+        .test-element:media(max-available-width: 30em) {
+            background: rainbow;
+        }
+    }
+
+    /* UHOH, second nested query with no element queries in it! */
+    @media all and (-webkit-min-device-pixel-ratio: 6) {
+        .booga-wooga {
+            background: rainbow;
+        }
+    }
+}
+
+@font-face {
+    font-family: "font of all knowledge";
+    src: local("font of all knowledge"), local(fontofallknowledge), url(fontofallknowledge.woff);
+    font-weight: 400;
+    font-style: normal;
+}
