@@ -1,0 +1,26 @@
+{
+  "name": "element-query",
+  "version": "0.0.1",
+  "description": "JS prollyfill for \"element queries\"",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^2.0.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mr0grog/element-query.git"
+  },
+  "author": "Rob Brackett",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mr0grog/element-query/issues"
+  },
+  "homepage": "https://github.com/Mr0grog/element-query"
+}
